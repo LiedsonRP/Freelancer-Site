@@ -35,6 +35,8 @@ body {
 
 .hero #background #backgroundGrad {
    position: absolute;
+   bottom: 1.3%;
+   
 }
 
 .hero #background #backgroudnCod {
@@ -92,4 +94,92 @@ body {
 }
 
 /* Serviços Prestados*/
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicos-prestados h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 51px;
+}
+
+/* Background cinza azulado*/
+.servico-esquerda {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.3%;
+}
+
+.servico-esquerda img {
+    margin-left: 9%;
+}
+
+.servico-esquerda .servicos-descricao {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 14.8%;
+}
+
+.servico-esquerda .servicos-descricao h3 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 31px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.servico-esquerda .servicos-descricao p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Background azul*/
+.servico-direita {
+    background-color: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.3%;
+}
+
+.servico-direita .servicos-descricao {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.servico-direita .servicos-descricao h3 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 31px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.servico-direita .servicos-descricao p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+} 
+
 
