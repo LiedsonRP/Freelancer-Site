@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #1D334A;
+    --secondary-color: #3050A0;
+    --terciary-color: #30C3D7;
+    --white-color: #F8F8F8;
+    --black-color: #000000;
+}
+
+body {
+    max-width: 100%;
+}
+
+/* Topo da página*/
+
+.hero {
+    margin: 0;
+    display: flex;
+    background-color: var(--primary-color);
+    max-width: 100%;
+    max-height: 70%;
+}
+
+.hero #background {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero #background img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero #background #backgroundGrad {
+   position: absolute;
+}
+
+.hero #background #backgroudnCod {
+    left: 1px;
+    top: 86px;
+    mix-blend-mode: overlay;
+    opacity: 70%;
+    backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+    position: absolute;
+    color: var(--white-color);
+    font-family: 'Fjalla One', sans-serif;
+    align-self: center;
+    margin-left: 10%;
+    margin-bottom: 24%;
+    font-size: 51px;
+}
+
+.hero p {
+    position: absolute;
+    align-self: center;
+    margin-top: 2.5%;
+    margin-left: 10%;
+    font-size: 29px;
+    color: var(--white-color);
+    font-family: 'Barlow', sans-serif;
+}
+
+.hero a {
+    position: absolute;
+    background-color: var(--terciary-color);
+    width: 370px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    border-radius: 10px;
+    align-items: center;    
+    text-decoration: none;
+}
+
+.hero a img {
+    margin-left: 8%;
+}
+
+.hero a h4 {
+    color: var(--white-color);
+    font-size: 33px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-right: 8%;
+}
+
+/* Serviços Prestados*/
+
