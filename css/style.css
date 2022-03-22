@@ -1,396 +1,744 @@
-:root {
+
+  :root {
     --primary-color: #1D334A;
     --secondary-color: #3050A0;
     --terciary-color: #30C3D7;
     --white-color: #F8F8F8;
     --black-color: #000000;
+
+    --font-title: 'Fjalla One', sans-serif;
+    --font-norma: 'Barlow', sans-serif;
 }
 
-body {
-    max-width: 100%;
+@media screen and (min-width: 768px) {  
+    
+    h2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color);
+        font-family: var(--font-title);
+        font-size: 51px;
+    }
+    
+    /* Topo da página*/
+    
+    .hero {
+        display: flex;
+        background-image: url("../img/backgroundGradient.svg");
+        background-color: var(--primary-color);
+        width: 100%;
+    }
+    
+    .hero #backgroudCod {
+        mix-blend-mode: overlay;
+        opacity: 80%;
+        backdrop-filter: blur(10px);
+        width: 100%;
+    }
+
+    .hero .hero-text {
+        margin-top: 2.5%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 10%;
+    }
+    
+    .hero h1 {
+        color: var(--white-color);
+        font-family: var(--font-title);
+        font-size: 51px;
+    }
+    
+    .hero p {
+        font-size: 29px;
+        color: var(--white-color);
+        font-family: var(--font-norma);
+    }
+    
+    .hero a {
+        margin-top: 5%;
+        background-color: var(--terciary-color);
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 10px;
+        align-items: center;    
+        text-decoration: none;
+    }
+    
+    .hero a img {
+        margin-left: 8%;
+    }
+    
+    .hero a h4 {
+        color: var(--white-color);
+        font-size: 21px;
+        font-family: var(--font-title);
+        margin-right: 8%;
+    }
+    
+    /* Serviços Prestados*/
+    
+    .servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    /* Background cinza azulado*/
+    .servico-esquerda {
+        background-color: var(--primary-color);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0.3%;
+    }
+    
+    .servico-esquerda img {
+        margin-left: 9%;
+    }
+    
+    .servico-esquerda .servicos-descricao {
+        color: var(--white-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-left: 10%;
+    }
+    
+    .servico-esquerda .servicos-descricao h3 {
+        font-family: var(--font-title);
+        font-size: 31px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .servico-esquerda .servicos-descricao p {
+        font-family: var(--font-norma);
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    /* Background azul*/
+    .servico-direita {
+        background-color: var(--secondary-color);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0.3%;
+    }
+
+    .servico-direita img {
+        margin-left: 40%;
+    }
+    
+    .servico-direita .servicos-descricao {
+        position: absolute;
+        color: var(--white-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-right: 44%;
+    }
+    
+    .servico-direita .servicos-descricao h3 {
+        font-family: var(--font-title);
+        font-size: 31px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .servico-direita .servicos-descricao p {
+        font-family: var(--font-norma);
+        font-size: 20px;
+        text-align: center;
+    } 
+    
+    /* Meus Processos*/
+    
+    .processos-cards-group {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .processo-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        width: 385.06px;
+    }
+    
+    
+    .processo-card  .processo-card-image img {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .circulo {
+        position: relative;
+        width: 52.32px;
+        height: 49.33px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        margin: 0.5% 2% 4% 0px;
+        color: var(--white-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .processo-card .processos-card-description {
+        margin-top: 12%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .processo-card .processos-card-description h3 {
+        font-family: var(--font-title);
+        color: var(--primary-color);
+    }
+    
+    .processo-card .processos-card-description p {
+        font-family: var(--font-norma);
+        margin-bottom: 20%;
+    }
+    
+    /* Sobre*/
+    
+    .sobre {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+    
+    #sobre-title {
+        justify-content: left;
+        margin-left: 12%;
+    }
+    
+    .sobre p {
+        font-size: 32px;
+        font-family: 'Barlow', sans-serif;
+        text-align: justify;
+        margin-left: 3%;
+    }
+    
+    .sobre #citacao {
+        font-style: italic;
+        color: var(--primary-color);
+        text-align: justify;
+        width: 581;
+    }
+    
+    /* contato*/
+    
+    .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contato #background {
+        background-color: var(--primary-color);
+        position: absolute;
+        width: 100%;
+    }
+    
+    .contato h2 {
+        position: relative;
+        color: var(--white-color);
+    }
+    
+    .contato {
+        background-color: var(--primary-color);
+        background-image: url("../img/backgroundGradient.svg");
+    }
+    
+    .contato-projetos {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 23%;
+        justify-content: space-between;
+    }
+    
+    .contato-projetos .contato-projetos-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: var(--white-color);
+        font-family: var(--font-norma);
+        font-size: 20px;
+    }
+    
+    .contato-orcamento {
+        margin-top: 30px;
+        position: relative;
+        width: 80%;
+        height: 50%;
+        background-color: var(--white-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .contato-orcamento h3 {
+        font-family: var(--font-title);
+        font-size: 31px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .conato-orcamento-form {
+        margin-bottom: 5%;
+    }
+    
+    .contato-orcamento .contato-orcamento-icon {
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    
+    .contato-orcamento .contato-orcamento-icon input {
+        border: 0.5px solid;
+        border-color: var(--black-color);
+        height: 40px;
+        border-radius: 10px;
+        width: 95%;
+        font-family: 'Barlow', sans-serif;
+    
+        box-sizing: border-box;
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        background-color: #FFF9F9;
+        
+    }
+    
+    .contato-orcamento .contato-orcamento-icon label {
+        margin-bottom: 10px;
+        font-family: var(--font-norma);
+        font-size: 20px;
+    }
+    
+    .contato-orcamento .contato-orcamento-icon textarea {
+        box-sizing: border-box;
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        background-color: #FFF9F9;
+        width: 95%;
+        resize: none;
+        font-family: var(--font-norma);
+    }
+    
+    .contato-orcamento a {
+        background-color: var(--terciary-color);
+        width: 370px;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 7%;
+        border-radius: 10px;
+        align-items: center;    
+        text-decoration: none;
+    }
+    
+    .contato-orcamento a h4 {
+        color: var(--white-color);
+        font-size: 25px;
+        font-family: var(--font-title);
+    }
 }
 
-h2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 51px;
+
+@media screen and (max-width: 767px) {
+
+     
+    h2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: var(--primary-color);
+        font-family: var(--font-title);
+        font-size: 30px;
+    }
+    
+
+    /*Topo da Página*/
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        background-image: url("../img/backgroundGradient.svg");
+        background-color: var(--primary-color);
+    }
+    
+    .hero #backgroudCod {
+        mix-blend-mode: overlay;
+        opacity: 100%;
+        backdrop-filter: blur(10px);
+        position: relative;
+    }
+
+    .hero  .hero-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: inherit;
+        margin-left: 10%;
+    }
+
+    .hero h1 {
+        color: var(--white-color);
+        font-family: var(--font-title);
+        font-size: 30px;
+    }
+    
+    .hero p {
+        margin-top: 2.5%;
+        font-size: 20px;
+        color: var(--white-color);
+        font-family: var(--font-norma);
+    }
+    
+    .hero a {
+        background-color: var(--terciary-color);
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 10px;
+        align-items: center;    
+        text-decoration: none;
+    }
+    
+    .hero a h4 {
+        color: var(--white-color);
+        font-size: 15px;
+        font-family: var(--font-title);
+    }
+
+    .servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*Serviços Prestados*/
+    
+    /* Background cinza azulado*/
+    .servico-esquerda {
+        background-color: var(--primary-color);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.3%;
+    }
+    
+    .servico-esquerda img {
+        width: 100%;
+    }
+    
+    .servico-esquerda .servicos-descricao {
+        color: var(--white-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .servico-esquerda .servicos-descricao h3 {
+        font-family: var(--font-title);
+        font-size: 28px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .servico-esquerda .servicos-descricao p {
+        font-family: var(--font-norma);
+        font-size: 18px;
+        margin-bottom: 20%;
+    }
+    
+    /* Background azul*/
+    .servico-direita {
+        background-color: var(--secondary-color);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.3%;
+    }
+
+    .servico-direita img {
+        width: 100%;
+        height: 40%;
+    }
+    
+    .servico-direita .servicos-descricao {
+        position: relative;
+        color: var(--white-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .servico-direita .servicos-descricao h3 {
+        font-family: var(--font-title);
+        font-size: 31px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .servico-direita .servicos-descricao p {
+        font-family: var(--font-norma);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Processos*/
+
+    .processos-cards-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .processo-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        width: 385.06px;
+    }
+    
+    
+    .processo-card  .processo-card-image img {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .circulo {
+        position: relative;
+        width: 52.32px;
+        height: 49.33px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        margin: 0.5% 2% 4% 0px;
+        color: var(--white-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .processo-card .processos-card-description {
+        margin-top: 12%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .processo-card .processos-card-description h3 {
+        font-family: var(--font-title);
+        color: var(--primary-color);
+    }
+    
+    .processo-card .processos-card-description p {
+        font-family: var(--font-norma);
+        font-size: 20px;
+        margin-bottom: 20%;
+    }
+
+    /* Processos*/
+
+    .sobre {
+        margin-top: 7%;
+        margin-bottom: 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sobre p {
+        font-size: 28px;
+        font-family: 'Barlow', sans-serif;
+        text-align: justify;
+        margin-left: 3%;
+    }
+    
+    .sobre #citacao {
+        font-style: italic;
+        color: var(--primary-color);
+        text-align: justify;
+        width: 581;
+    }
+
+    /* contato*/
+    
+    .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contato #background {
+        background-color: var(--primary-color);
+        position: absolute;
+        width: 100%;
+    }
+    
+    .contato h2 {
+        position: relative;
+        color: var(--white-color);
+    }
+    
+    .contato {
+        background-color: var(--primary-color);
+        background-image: url("../img/backgroundGradient.svg");
+    }
+    
+    .contato-projetos {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+        justify-content: space-between;
+    }
+    
+    .contato-projetos .contato-projetos-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: var(--white-color);
+        font-family: var(--font-norma);
+        font-size: 20px;
+    }
+
+    .contato-orcamento {
+        margin-top: 30px;
+        position: relative;
+        width: 80%;
+        height: 50%;
+        background-color: var(--white-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .contato-orcamento h3 {
+        font-family: var(--font-title);
+        font-size: 31px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .conato-orcamento-form {
+        margin-bottom: 5%;
+    }
+    
+    .contato-orcamento .contato-orcamento-icon {
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    
+    .contato-orcamento .contato-orcamento-icon input {
+        border: 0.5px solid;
+        border-color: var(--black-color);
+        height: 40px;
+        border-radius: 10px;
+        width: 95%;
+        font-family: 'Barlow', sans-serif;
+    
+        box-sizing: border-box;
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        background-color: #FFF9F9;
+        
+    }
+    
+    .contato-orcamento .contato-orcamento-icon label {
+        margin-bottom: 10px;
+        font-family: var(--font-norma);
+        font-size: 20px;
+    }
+    
+    .contato-orcamento .contato-orcamento-icon textarea {
+        box-sizing: border-box;
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        background-color: #FFF9F9;
+        width: 95%;
+        resize: none;
+        font-family: var(--font-norma);
+    }
+    
+    .contato-orcamento a {
+        background-color: var(--terciary-color);
+        width: 370px;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 7%;
+        border-radius: 10px;
+        align-items: center;    
+        text-decoration: none;
+    }
+    
+    .contato-orcamento a h4 {
+        color: var(--white-color);
+        font-size: 25px;
+        font-family: var(--font-title);
+    }
 }
 
-/* Topo da página*/
-
-.hero {
-    margin: 0;
-    display: flex;
-    background-color: var(--primary-color);
-    max-width: 100%;
-    max-height: 70%;
-}
-
-.hero #background {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero #background img {
-    margin: 0%;
-    width: 100%;
-    height: 100%;
-}
-
-.hero #background #backgroundGrad {
-   position: absolute;
-   height: 80%;
-}
-
-.hero #background #backgroudCod {
-    mix-blend-mode: overlay;
-    opacity: 100%;
-    backdrop-filter: blur(10px);
-    position: relative;
-}
-
-.hero h1 {
-    position: absolute;
-    color: var(--white-color);
-    font-family: 'Fjalla One', sans-serif;
-    align-self: center;
-    margin-left: 10%;
-    margin-bottom: 24%;
-    font-size: 51px;
-}
-
-.hero p {
-    position: absolute;
-    align-self: center;
-    margin-top: 2.5%;
-    margin-left: 10%;
-    font-size: 29px;
-    color: var(--white-color);
-    font-family: 'Barlow', sans-serif;
-}
-
-.hero a {
-    position: absolute;
-    background-color: var(--terciary-color);
-    width: 370px;
-    align-self: flex-end;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 10%;
-    margin-bottom: 7%;
-    border-radius: 10px;
-    align-items: center;    
-    text-decoration: none;
-}
-
-.hero a img {
-    margin-left: 8%;
-}
-
-.hero a h4 {
-    color: var(--white-color);
-    font-size: 33px;
-    font-family: 'Fjalla One', sans-serif;
-    margin-right: 8%;
-}
-
-/* Serviços Prestados*/
-
-.servicos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
-/* Background cinza azulado*/
-.servico-esquerda {
-    background-color: var(--primary-color);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 0.3%;
-}
-
-.servico-esquerda img {
-    margin-left: 9%;
-}
-
-.servico-esquerda .servicos-descricao {
-    color: var(--white-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: 14.8%;
-}
-
-.servico-esquerda .servicos-descricao h3 {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 31px;
-    text-decoration: underline;
-    text-align: center;
-}
-
-.servico-esquerda .servicos-descricao p {
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-
-/* Background azul*/
-.servico-direita {
-    background-color: var(--secondary-color);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0.3%;
-}
-
-.servico-direita .servicos-descricao {
-    color: var(--white-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.servico-direita .servicos-descricao h3 {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 31px;
-    text-decoration: underline;
-    text-align: center;
-}
-
-.servico-direita .servicos-descricao p {
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-    text-align: center;
-} 
-
-/* Meus Processos*/
-
-.processos-cards-group {
-    display: flex;
-    flex-direction: row;
-}
-
-.processo-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    width: 385.06px;
-}
-
-
-.processo-card  .processo-card-image img {
-    position: static;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.circulo {
-    position: relative;
-    width: 52.32px;
-    height: 49.33px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    margin: 0.5% 2% 4% 0px;
-    color: var(--white-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.processo-card .processos-card-description {
-    margin-top: 12%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     
 }
-
-.processo-card .processos-card-description h3 {
-    font-family: 'Fjalla One', sans-serif;
-    color: var(--primary-color);
-}
-
-.processo-card .processos-card-description p {
-    font-family: 'Barlow', sans-serif;
-    margin-bottom: 20%;
-}
-
-/* Sobre*/
-
-.sobre {
-    margin-top: 7%;
-    margin-bottom: 7%;
-}
-
-#sobre-title {
-    justify-content: left;
-    margin-left: 12%;
-}
-
-.sobre p {
-    font-size: 32px;
-    font-family: 'Barlow', sans-serif;
-    text-align: justify;
-    margin-left: 3%;
-}
-
-.sobre #citacao {
-    font-style: italic;
-    color: var(--primary-color);
-    text-align: justify;
-    width: 581;
-}
-
-/* contato*/
-
-.contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contato #background {
-    background-color: var(--primary-color);
-    position: absolute;
-    width: 100%;
-}
-
-.contato h2 {
-    position: relative;
-    color: var(--white-color);
-}
-
-.contato {
-    background-color: var(--primary-color);
-    background-image: url("../img/backgroundGradient.svg");
-}
-
-.contato-projetos {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 23%;
-    justify-content: space-between;
-}
-
-.contato-projetos .contato-projetos-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: var(--white-color);
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-}
-
-.contato-orcamento {
-    margin-top: 30px;
-    position: relative;
-    width: 80%;
-    height: 50%;
-    background-color: var(--white-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.contato-orcamento h3 {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 31px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.conato-orcamento-form {
-    margin-bottom: 5%;
-}
-
-.contato-orcamento .contato-orcamento-icon {
-    display: flex;
-    flex-direction: column;
-    justify-self: left;
-    margin-top: 1%;
-    margin-left: 5%;
-}
-
-.contato-orcamento .contato-orcamento-icon input {
-    border: 0.5px solid;
-    border-color: var(--black-color);
-    height: 40px;
-    border-radius: 10px;
-    width: 95%;
-    font-family: 'Barlow', sans-serif;
-
-    box-sizing: border-box;
-    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    background-color: #FFF9F9;
-    
-}
-
-.contato-orcamento .contato-orcamento-icon label {
-    margin-bottom: 10px;
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-}
-
-.contato-orcamento .contato-orcamento-icon textarea {
-    box-sizing: border-box;
-    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    background-color: #FFF9F9;
-    width: 95%;
-    resize: none;
-    font-family: 'Barlow', sans-serif;
-}
-
-.contato-orcamento a {
-    background-color: var(--terciary-color);
-    width: 370px;
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 7%;
-    border-radius: 10px;
-    align-items: center;    
-    text-decoration: none;
-}
-
-.contato-orcamento a h4 {
-    color: var(--white-color);
-    font-size: 25px;
-    font-family: 'Fjalla One', sans-serif;
-}
-
-
-
